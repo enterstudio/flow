@@ -4,6 +4,12 @@
   "license": "BSD-3-Clause",
   "repository": "facebook/flow",
   "dependencies": {
-    "yarn": "^0.16.1"
-  }
+    "yarn": "^0.16.1",
+    "snyk": "^1.83.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
