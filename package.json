@@ -24,7 +24,8 @@
     "sane": "^1.4.0",
     "source-map-support": "~0.4.0",
     "twit": "^2.1.5",
-    "resolve": "^1.1.7"
+    "resolve": "^1.1.7",
+    "snyk": "^1.316.1"
   },
   "babel": {
     "presets": [
@@ -40,6 +41,9 @@
     ]
   },
   "scripts": {
-    "test": "make test"
-  }
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
